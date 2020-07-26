@@ -6,6 +6,7 @@ class BubbleSort:
         while True:
             sorting= False
             for i in range(len(list_to_order)-1):
+                print(list_to_order)
                 if list_to_order[i+1] < list_to_order[i]:
                     x=list_to_order[i]
                     list_to_order[i]=list_to_order[i+1]
@@ -16,5 +17,7 @@ class BubbleSort:
 
 x= BubbleSort()
 
-print(x.srt([5,6,4,2,1,8,3]))
+print(x.srt([5,6,4,2,1,8,3,11,55,0,1,,4,66,101]))
+
+
     
