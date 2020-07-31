@@ -28,8 +28,9 @@ class SortingAlgorithms:
                     list_to_order[k-1]= element
                     k-=1
             return list_to_order
-            
-        
+
+    def selection_sort(self, list_to_order):
+        pass
                 
 
                     
