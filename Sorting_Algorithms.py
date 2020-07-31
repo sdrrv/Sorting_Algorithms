@@ -22,7 +22,7 @@ class SortingAlgorithms:
         else:
             for i in range(1,len(list_to_order)):
                 k=i
-                element = list_to_order[i] #Ana Moura Santos
+                element = list_to_order[i]
                 while k>0 and element < list_to_order[k-1]:
                     list_to_order[k]=list_to_order[k-1]
                     list_to_order[k-1]= element
@@ -30,7 +30,20 @@ class SortingAlgorithms:
             return list_to_order
 
     def selection_sort(self, list_to_order):
-        pass
+        if len(list_to_order)<=1:
+            return list_to_order
+        for i in range(len(list_to_order)):
+            high = list_to_order[i]
+            order = i
+            for j in range(i,len(list_to_order)):
+                if high > list_to_order[j]:
+                    high = list_to_order[j]
+                    order = j
+            list_to_order[order] = list_to_order[i]
+            list_to_order[i] = high
+        return list_to_order
+          
+
                 
 
                     
