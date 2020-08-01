@@ -42,21 +42,9 @@ class SortingAlgorithms:
             list_to_order[order] = list_to_order[i]
             list_to_order[i] = high
         return list_to_order
-          
 
-                
-
-                    
-                
-
-    
-
-
-
-
-
-
-
+    def quick_sort(self,list_to_order):
+        pass
 
 
 
